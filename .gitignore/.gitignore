@@ -1,0 +1,15 @@
+from random import randint  
+n = int(randint(1, 20))
+p = 0 
+t = 0
+while p != n:
+    p= int(input("Chute um número:"))
+    t += 1
+    if p == n:
+        print("ACERTOU")
+    elif p < n:
+        print("Chute um valor maior:")
+    else:
+        print("chute um valor menor:")
+
+print("fim de jogo")
